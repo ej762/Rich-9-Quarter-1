@@ -1,0 +1,3 @@
+Hello World!
+Im apart the gaming community. The gaming community is a good community but the promblem is not enough horror games.
+My business would be a non-profit business. It would be primarily black business and we would make new horror games for all platforms. We would get the licensing for the colloborations we would new and try to produce 2-3 horror games a year. That is my idea for the gaming community.
