@@ -1,37 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet", href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EJ's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="header">
-      <div class="container">
-         <nav>
-             <img src="" alt="">
-              <ul>
-                  <li><a herf ="Home">Home</a><li></li>
-                  <li><a herf ="Home">About</a><li></li>
-                  <li><a herf ="Home">Services</a><li></li>
-                  <li><a herf ="Home">Portfolio</a><li></li>
-                  <li><a herf ="Home">contact</a><li></li>
-                <ul>
-             <nav>
-              <div class="header-text">
-                <p>Hidden geinus project student</p>
-                <h1>Hi,I'm,<span> EJ!</span><h1>
 
-           <div>
-           <div id="about">
-            <div class="container">
-             <div class="row">
-             <div class="about-col-1">
-              <div class="about-col-2">
-                
-    
-      <div>
-   </body>
-  </html>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <img src="images/images.jpeg" alt="logo" />
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <h1>Hi, I'm <span>EJ</span><br> from Richmond CA</h1>
+      </div>
+    </div>
+  </header>
 
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <!-- Image Column -->
+        <div class="about-col-1">
+          <img src="images/AADE8330-D45B-4B12-8FA8-DBDE4C5C2F99.JPG" alt="About Image" />
+        </div>
+        <!-- Text Column -->
+        <div class="about-col-2">
+          <h2 class="sub-title">Who I am</h2>
+          <p>
+            I know you're wondering who I am well, this is me on the left. As you know from the front page, my name is Ej
+            I am 14 years old.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('goals')">Goals</p>
+            <p class="tab-links" onclick="opentab('background-info')">Background Info</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Interpersonal</span><br>Great with talking to people</li>
+              <li><span>Designing</span><br>Clothes</li>
+              <li><span>Class</span><br>co2029</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="background-info">
+            <ul>
+              <li><span>School</span><br>Going into Pinole Valley High School</li>
+              <li><span>Hobbies</span><br>Basketball and Making clothing brand</li>
+              <li><span>Born</span><br>2011</li>
+              <li><span>Cohort</span><br>Rich 9</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="goals">
+            <ul>
+              <li><span>Getting the job</span><br></li>
+              <li><span>Clothing</span><br>Make a clothing brand</li>
+              <li><span>Class</span><br>co2029</li>
+              <li><span>Cohort</span><br>Rich 9</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2 class="sub-title">My Abilities/Skills</h2>
+      <div class="services-list">
+        <div class="service">
+          <h3>Web Development</h3>
+          <p>Creating well-designed websites that people can use and buy.</p>
+        </div>
+        <div class="service">
+          <h3>Designing clothes</h3>
+          <p>Making designs and puting them on hoodies to see what they look like.</p>
+        </div>
+        <div class="service">
+          <h3>Basketball</h3>
+          <p>Im a good basketball player never played on a team all natural talent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="sub-title">More about me</h2>
+      <div class="portfolio-gallery">
+        <div class="project">
+          <img src="images/IMG_1504.jpg" />
+          <h4>Clothing brand beginner</h4>
+        </div>
+        <div class="project">
+             <img src="images/BCE6775F-992A-45FE-A949-E54C53175440.jpg"  />
+          <h4>Outfit</h4>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="sub-title">Contact Me</h2>
+      <p>Have any questions? Contact Me</p>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:jadentraylor856@gmail.com">ejwebbe51@gmail.com</a></p>
+        <p>Number: <a href="#">510-480-9373</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>2025 Ej's Portfolio</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
